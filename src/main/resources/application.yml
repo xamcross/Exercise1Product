@@ -1,3 +1,11 @@
-spring.application.name=Product
-
-server.servlet.context-path=/product
+spring:
+  application:
+    name: Product
+  aot:
+    enabled: true
+  data:
+    mongodb:
+      uri: mongodb://my-mongo:27017/mydatabase
+server:
+  servlet:
+    context-path: /product
